@@ -1,0 +1,66 @@
+/* reusable */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+
+/*--------------------------
+ navbar or header styles
+ ------------------------- */
+
+.header{
+    background-color: #2D25A0;
+    
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+}
+.menu-bar a{
+    margin: 20px;
+    font-size: 16px;
+}
+.login-logout{
+    background-color: #E02C6D;
+}
+
+/*-----------------
+ banner styles 
+ -----------------*/
+ .banner-heading h1{
+     font-size: 64px;
+     color: white;
+     margin-bottom: 25px;
+ }
+ .banner-heading a{
+     color: white;
+     text-decoration: none;
+ }
+ .banner-heading i{
+     color: white;
+ }
+ .banner{
+     display: flex;
+     justify-content: space-between;
+ }
+ .banner-heading{
+     width: 485px;
+ }
+ .banner-img img{
+     width: 556px;
+     height: 448px;
+ }
+
+
+
