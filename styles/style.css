@@ -250,6 +250,59 @@ body{
 
 
 
+ /*------------------
+  news option
+ ------------------- */
+.news-section{
+    background-color: rgba(250, 247, 247, 0.966);
+    padding: 50px 0;
+    margin-top: 100px;
+    text-align: center;
+}
+ .news-option{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+    
+ }
+ .Goalkeepers a{
+    text-decoration: none;
+    display: block;
+    line-height: 32px;
+    transition: 0.5s;
+ }
+ .Goalkeepers a:hover{
+    color: rgb(216, 183, 172);
+ }
+ .Defenders a{
+    text-decoration: none;
+    display: block;
+    line-height: 32px;
+    transition: 0.5s;
+ }
+ .Defenders a:hover{
+    color: rgb(216, 183, 172);
+ }
+ .Midfielders a{
+    text-decoration: none;
+    display: block;
+    line-height: 32px;
+    transition: 0.5s;
+ }
+ .Midfielders a:hover{
+    color: rgb(216, 183, 172);
+ }
+ .Forwards a{
+    text-decoration: none;
+    display: block;
+    line-height: 32px;
+    transition: 0.5s;
+ }
+ .Forwards a:hover{
+    color: rgb(216, 183, 172);
+ }
+
+
+
  /* -----------------------
     footer section start
  ------------------------- */
@@ -379,6 +432,12 @@ body{
         height: 100%;
        margin-bottom: 20px;
      }
+
+     /* news section */
+
+     .news-option{
+        grid-template-columns: repeat(1,1fr);
+    }
     
  }
 
@@ -422,5 +481,10 @@ body{
         height: 100%;
        margin-bottom: 20px;
      }
+
+     /* news section */
+     .news-option{
+        grid-template-columns: repeat(2,1fr);
+    }
  }
 
