@@ -6,7 +6,7 @@ body{
     box-sizing: border-box;
 }
 .container{
-    width: 85%;
+    width: 86%;
     margin: auto;
 }
 
@@ -56,7 +56,7 @@ body{
  -----------------*/
  
 .banner{
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     flex-direction: row;
 
@@ -136,7 +136,8 @@ body{
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 45px;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
     margin-top: 70px;
 }
 .player{
@@ -192,6 +193,58 @@ body{
  }
  .match-img img:hover{
      transform: scale(1.1);
+ }
+
+
+
+ /* gallery section */
+
+#gallery h1{
+    text-align: center;
+    font-size: 50px;
+}
+/* .photo-album{
+   
+} */
+ .photo-album{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-column-gap: 20px;
+     grid-row-gap: 20px;
+     
+ }
+ .photo-overlay{
+     position: relative;
+     overflow: hidden;
+ }
+ .photo-overlay img{
+     transition: 0.5s;
+     width: 100%;
+ }
+ .photo-overlay:hover img{
+     transform: scale(1.1);
+ }
+ .photo-details{
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: rgba(255, 255, 255, 0.75);
+     opacity: 0;
+     transition: 0.4s;
+     padding: 10px;
+ }
+ .photo-details:hover{
+     opacity: 1;
+ }
+ .photo-details{
+     margin-top: 0;
+     margin-bottom: 0;
  }
 
 
@@ -315,6 +368,17 @@ body{
     .match-highlight p{
         margin-right: 0px;
     }
+
+    /* gallery */
+    .photo-album{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+    }
+    .photo-details{
+        width: 100%;
+        height: 100%;
+       margin-bottom: 20px;
+     }
     
  }
 
@@ -347,5 +411,16 @@ body{
     .match-highlight p{
         margin-right: 0px;
     }
+    /* photo gallery */
+
+    .photo-album{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 20px;
+    }
+    .photo-details{
+        width: 100%;
+        height: 100%;
+       margin-bottom: 20px;
+     }
  }
 
