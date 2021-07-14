@@ -18,7 +18,7 @@ body{
 
 .header{
     background-color: #2D25A0;
-    height: 100vh;
+    height: 100%;
 }
 .nav-bar{
     display: flex;
