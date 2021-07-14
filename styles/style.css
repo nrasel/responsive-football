@@ -3,6 +3,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 .container{
     width: 85%;
@@ -86,7 +87,6 @@ body{
  }
  .banner-heading{
     width: 100%;
-    /* overflow: hidden; */
     padding-bottom: 39px;
 }
  .banner-img{
@@ -94,8 +94,8 @@ body{
      justify-content: flex-end;
  }
  .banner-img img{
-     width: 90%;
-     height: 84%;
+     width: 80%;
+     height: 95%;
     
  }
 
@@ -124,6 +124,71 @@ body{
         transform: translateY(-10px);
     }
   }
+
+
+
+
+
+  /* ----------------------
+  main section start here
+  ------------------------- */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 45px;
+    margin-top: 70px;
+}
+.player{
+   background: #FFFFFF;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+   margin-bottom: 27px;
+   padding: 15px;
+   text-align: center;
+}
+.player img{
+    width: 100%;
+    height: 256px;
+}
+  
+
+/* -----------------------
+    football match section
+    ------------------------ */
+
+ .football-match{
+     display: flex;
+     justify-content: space-between;
+     margin: auto;
+     margin-top: 110px;
+ }
+ .match-highlight{
+    margin-bottom: 29px;
+ }
+ .match-highlight h1{
+     font-size: 48px;
+     line-height: 60px;
+ }
+ .match-highlight a{
+    color: white;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 30px;
+    border-radius: 7px;
+ }
+ .match-highlight i{
+    color: white;
+    transition: 0.5s;
+}
+.match-highlight a:hover i{
+    transform: translate(13px);
+}
+ .match-highlight p{
+     margin-right: 100px;
+ }
+ .match-img img{
+    width: 100%;
+ }
 
 
 
@@ -176,6 +241,27 @@ body{
         height: 84;
        
     }
+
+
+/* players section */
+
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player img{
+        width: 100%;
+        height: 256px;
+    }
+
+    /* match section */
+
+    .football-match{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+    }
+    .match-highlight p{
+        margin-right: 0px;
+    }
  }
 
   /* -----------------------
@@ -194,6 +280,18 @@ body{
     }
     .banner-heading h1{
         font-size: 50px;
+    }
+/* players section */
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+/* match section */
+    .football-match{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+    }
+    .match-highlight p{
+        margin-right: 0px;
     }
  }
 
